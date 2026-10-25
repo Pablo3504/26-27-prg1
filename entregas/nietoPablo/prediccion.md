@@ -20,3 +20,13 @@ El cambio será 200 - 232 = -32 €. La división entera de Java trunca
 hacia cero y el resto puede ser negativo. Por eso salen -1 billete de
 20 €, -1 billete de 10 € y -1 moneda de 2 €. El programa no tiene una
 condición que impida mostrar esas cantidades.
+
+## Resultado real
+
+Después del commit de la predicción, ejecuté el caso 232/200. La salida
+coincidió con lo previsto: 0, 0, -1, -1, 0, -1 y 0 piezas, en orden de
+100 a 1 €.
+
+El cambio calculado fue -32 €. Como no hay una validación para impedir
+un pago insuficiente, la división entera y el módulo produjeron esas
+cantidades negativas.
